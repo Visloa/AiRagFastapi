@@ -1,0 +1,11 @@
+
+fastapi
+uvicorn[standard]
+psycopg[binary]
+pgvector
+fastembed
+groq
+pypdf
+python-multipart
+python-dotenv
+slowapi
