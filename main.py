@@ -64,7 +64,7 @@ def get_db():
 async def lifespan(app: FastAPI):
     # Keep schema in db.sql instead of hiding database changes in Python.
     with get_db() as conn:
-        conn.execute(Path("db.sql").read_text(encoding="utf-8"))
+        conn.execute(Path("db.sql").read_text(encoding="utf-8-sig"))
     yield
 
 
